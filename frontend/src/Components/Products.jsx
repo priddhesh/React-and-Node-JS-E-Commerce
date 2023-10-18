@@ -9,7 +9,7 @@ function Products() {
   },[products]);
 
   const getProducts = async ()=>{
-     let result = await fetch("http://localhost:5000/getProducts");
+     let result = await fetch("http://e-commerce-fhxo.onrender.com/getProducts");
      result = await result.json();
      
      setProducts(result);
