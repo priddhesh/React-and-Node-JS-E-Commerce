@@ -21,7 +21,7 @@ function Products() {
       let price = document.getElementById(`price${id}`).innerText;
       let category = document.getElementById(`category${id}`).innerText;
      
-      let result = fetch("http://localhost:5000/deleteProduct",{
+      let result = fetch("http://e-commerce-fhxo.onrender.com/deleteProduct",{
           method: "delete",
           body: JSON.stringify({name, price,category}),
         headers : {
