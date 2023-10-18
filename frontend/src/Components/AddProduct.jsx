@@ -14,7 +14,7 @@ function AddProduct() {
     }
 
     const userID = JSON.parse(localStorage.getItem("user")).name;
-    let result = await fetch("http://e-commerce-fhxo.onrender.com/addProduct",{
+    let result = await fetch("https://e-commerce-fhxo.onrender.com/addProduct",{
         method: "post",
         body: JSON.stringify({name, price,category,company,userID}),
         headers : {

@@ -9,7 +9,7 @@ function Products() {
   },[products]);
 
   const getProducts = async ()=>{
-     let result = await fetch("http://e-commerce-fhxo.onrender.com/getProducts");
+     let result = await fetch("https://e-commerce-fhxo.onrender.com/getProducts");
      result = await result.json();
      
      setProducts(result);
@@ -21,7 +21,7 @@ function Products() {
       let price = document.getElementById(`price${id}`).innerText;
       let category = document.getElementById(`category${id}`).innerText;
      
-      let result = fetch("http://e-commerce-fhxo.onrender.com/deleteProduct",{
+      let result = fetch("https://e-commerce-fhxo.onrender.com/deleteProduct",{
           method: "delete",
           body: JSON.stringify({name, price,category}),
         headers : {

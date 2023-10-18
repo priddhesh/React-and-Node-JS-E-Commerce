@@ -15,7 +15,7 @@ function Signup() {
   },[]);
 
   const collectData = async() =>{
-    let result = await fetch('http://e-commerce-fhxo.onrender.com/register',{
+    let result = await fetch('https://e-commerce-fhxo.onrender.com/register',{
        method: 'post',
        body : JSON.stringify({name,email,password}),
        headers :{
